@@ -27,7 +27,6 @@ Additionally, each e-puck avoids collision with the walls and other e-pucks. Whe
 
 <img src="Flow_Chart.png" width="400" height="650" />
 
-
 # Results
 To obtain the results, the number of collected resources was stored in a text file after every 2 seconds for each simulation time of 60 seconds. After conducting 10 trials each for a single e-puck and 5 e-pucks in the same environment, the mean the standard deviation for each time instance were calculated for the 2 scenarios. The results obtained from the simulation the single e-puck and 5 e-pucks are shown below. 
 
