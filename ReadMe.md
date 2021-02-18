@@ -19,22 +19,22 @@ Each trial should last 60 seconds of simulation time (note that the actual time 
 watch/computer may be different.). 
 The simulation environment is shown in below.
 
-<img src="scene_sample.png" width="650" height="650" />
+<img src="scene_sample.JPG" width="650" height="650" />
 
 The simulations will be made using V-REP. The scenes can be found in the scenes folder.The velocity argument is bounded by [-6.24, 6.24].The sensors available on the e-puck platform (e.g. camera, proximity) were used. 
 Each e-puck explores the environment in a circular motion looking for resources to gather. When the e-puck identifies a resource, it navigates towards the resource and collects it. If the e-puck identifies more than one resource, it moves towards the closest resource and collects it. The circular motion of the e-puck enables it to scan all areas of the environment with its camera for resources. 
-Additionally, each e-puck avoids collision with the walls and other e-pucks. When an e-puck detects a wall or another object in front of it, it turns around. Figure 1 is the graphical representation of the control strategy for the e-puck. 
+Additionally, each e-puck avoids collision with the walls and other e-pucks. When an e-puck detects a wall or another object in front of it, it turns around. The flow chat of the control strategy for the e-puck is shown below. 
 
+<img src="Flow_Chart.png" width="400" height="650" />
 
-<img src="1-epuck-plot.jpg" width="400" height="650" />
 
 # Results
 To obtain the results, the number of collected resources was stored in a text file after every 2 seconds for each simulation time of 60 seconds. After conducting 10 trials each for a single e-puck and 5 e-pucks in the same environment, the mean the standard deviation for each time instance were calculated for the 2 scenarios. The results obtained from the simulation the single e-puck and 5 e-pucks are shown below. 
 
-<img src="5-epuck-plot.jpg" width="400" height="650" />
+<img src="1-epuck-plot.jpg" width="650" height="650" />
 One Epuck
 
-<img src="Flow_Chart.png" width="400" height="650" />
+<img src="5-epuck-plot.jpg" width="650" height="650" />
 Five Epucks
 
 Both figures represent the average number of resources collected over time, with the error bars showing the standard deviation of the number of collected resources for each time instance.  
